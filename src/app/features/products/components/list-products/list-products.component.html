@@ -1,0 +1,25 @@
+<div class="container"> 
+  <div class="">
+    <a routerLink="/products/add">Add Product</a>
+  </div> 
+  <table class="table">
+    <thead>
+      <tr>
+        <th class="col pb-3">Name</th>
+        <th class="col">Description</th>
+        <th class="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <td class="w-250">{{ product.name }}</td>
+        <td class="w-850">{{ product.description }}</td>
+        <td>
+          <a routerLink="/products/edit/{{product.id}}">Edit</a> 
+          | 
+          <a (click)="deleteItem(product.id)">Delete</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

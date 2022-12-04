@@ -1,0 +1,28 @@
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+div span {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.column-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.column-text {
+    font-size: 12px;
+}

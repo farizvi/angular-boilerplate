@@ -1,0 +1,11 @@
+<div class="container">
+    <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+        <label for="product-name">Product Name</label>
+        <input type="text" id="product-name" formControlName="productName" required />
+        
+        <label for="description">Description</label>
+        <textarea id="description" formControlName="description" rows="10" cols="30"></textarea>
+        <br />
+        <button type="submit" [disabled]="!productForm.valid">Save</button>
+    </form>
+</div>
