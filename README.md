@@ -19,6 +19,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - Modify `angular.json` again and add 
     - `./node_modules/alertifyjs/build/alertify.min.js` to `projects->architect->build->scripts`
 
+
+## Steps to upgrade to Angular 15
+Run `npx @angular/cli update @angular/core @angular/cli` to upgrade the project to Angular 15
+
 ## Adding Components
 
 Add components to the app by running following command
